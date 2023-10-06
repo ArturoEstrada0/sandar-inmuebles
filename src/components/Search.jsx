@@ -1,4 +1,3 @@
-import React from 'react';
 import CountryDropdown from './CountryDropdown';
 import PropertyDropdown from './PropertyDropdown';
 import PriceRangeDropdown from './PriceRangeDropdown';
