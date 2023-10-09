@@ -5,6 +5,8 @@ import PriceRangeDropdown from './PriceRangeDropdown';
 import SearchIcon from '@mui/icons-material/Search';
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
+//import context
+import { HouseContext } from './HouseContext';
 
 function Search() {
   return (
