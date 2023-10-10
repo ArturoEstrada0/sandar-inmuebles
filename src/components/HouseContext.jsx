@@ -2,7 +2,6 @@ import React, { useState, useEffect, createContext } from "react";
 
 //import data
 import { housesData } from "../data";
-import { valueOrDefault } from "chart.js/dist/helpers/helpers.core";
 
 //create context
 export const HouseContext = createContext();
@@ -108,9 +107,10 @@ const HouseContextProvider = ({ children }) => {
     });
 
     setTimeout(() => {
-        return newHouses.length <1 ? setHouses ([]) :
-        setHouses (newHouses),
+      return (
+        newHouses.length < 1 ? setHouses([]) : setHouses(newHouses),
         setLoading(false)
+      );
     }, 1000);
   };
 
