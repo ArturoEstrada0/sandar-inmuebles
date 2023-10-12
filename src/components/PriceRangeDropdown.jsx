@@ -1,7 +1,8 @@
-import { useState, useEffect, useContext } from "react";
+import React, { useContext, useState } from "react";
 import { RiWallet3Line, RiArrowDownSLine, RiArrowUpSLine, RiHome5Line } from "react-icons/ri";
 import { Menu } from '@headlessui/react';
 import { HouseContext } from './HouseContext';
+import "./PriceRangeDropdown.css"; // Importa el archivo CSS
 
 const PriceRangeDropdown = () => {
   const { price, setPrice } = useContext(HouseContext);
@@ -30,9 +31,8 @@ const PriceRangeDropdown = () => {
     }
   ]
 
-
   return (
-    <Menu as='div' className='dropdown relative' >
+    <Menu as='div' className='dropdown relative'>
       <Menu.Button
         onClick={() => setIsOpen(!isOpen)}
         className='dropdown-btn w-full text-left'
@@ -40,10 +40,10 @@ const PriceRangeDropdown = () => {
         <RiWallet3Line
           className='dropdown-icon-primary' />
         <div>
-          <div className="text-[15px] font-medium leading-tight">
+          <div className="text-medium leading-tight">
             {price}
           </div>
-          <div className="text-[13px] leading-tight">
+          <div className="text-small leading-tight">
             Choose a price range
           </div>
         </div>
@@ -72,7 +72,3 @@ const PriceRangeDropdown = () => {
 };
 
 export default PriceRangeDropdown;
-
-//ToDo: Agregar la función handleClick a el componente HouseContext
-//ToDo: Agregar la función useContext al componente Search
-//ToDo: Agregar el onClick a el botón de la clase Search
