@@ -1,0 +1,39 @@
+/* Banner.css */
+.banner {
+    background-color: #f7f7f7; /* Color de fondo del banner */
+    padding: 2rem 0;
+    text-align: center;
+  }
+  
+  .banner-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem; /* Añade espacio a los lados del contenido */
+  }
+  
+  .banner-text {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .brand-name {
+    font-weight: bold;
+    color: #333; /* Color del nombre de la marca */
+  }
+  
+  .banner-image {
+    flex: 1;
+    text-align: right;
+  }
+  
+  .banner-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Estilos para el componente Search si es necesario */
+  

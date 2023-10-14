@@ -1,0 +1,21 @@
+/* Estilo de entrada (fade) */
+.fade-enter {
+    opacity: 0;
+    transform: translateY(-20px); /* Opcional: animación de deslizamiento desde arriba */
+  }
+  
+  .fade-enter-active {
+    opacity: 1;
+    transform: translateY(0); /* Opcional: animación de deslizamiento desde arriba */
+    transition: opacity 500ms, transform 500ms;
+  }
+  
+  .fade-exit {
+    opacity: 1;
+  }
+  
+  .fade-exit-active {
+    opacity: 0;
+    transition: opacity 500ms;
+  }
+  

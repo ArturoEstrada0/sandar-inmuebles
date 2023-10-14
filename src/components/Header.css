@@ -1,0 +1,49 @@
+/* Header.css */
+.header {
+  background-color: #333;
+  padding: 1rem 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem; /* Añade espacio a los lados del contenedor */
+}
+
+.container img {
+  width: 150px; /* Ajusta el ancho de la imagen según tus necesidades */
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Estilos para los enlaces */
+.nav-link:hover {
+  color: #ff9900; /* Cambia el color al pasar el ratón por encima */
+}
+
+/* Otros estilos específicos que puedas necesitar */
